@@ -3,11 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Time to Aqua Up!</title>
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAARSAAAEUgHQ6AxBAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAd1QTFRF////AP//////Var/qv//bbbbttv/gL/fn9//d7vuqt3ucbjxqtXxc7/ms9nye7ntsNP2d7vuqtX3ebzrrtfyebbtsNXzeLjsrdb0d7nqr9X1eLrqrtXzd7jqr9XzeLnqrdbzeLrrr9T0SnKRUXaRebjqrtXyRmyKSm6MeLrrrdbyeLnrr9XzRWeEeLjrrtXzeLjsr9Xzd7nqrdXzebnqrtXzd7rqr9b0Woqwcpazd7nqr9bzRGiDeLnrrdXzeLrqrtb0d7nrrtXyeLjsrtXzd7nrrdX0eLnsrtX0eLnrrtXzebrrrtXzeLnrrtXzeLnqrtbzY4mmd7jrrtXzucfRVYOmZ4ypr77Kzdfez9ng0drh3+XqeLnsmKu6mq28rdbz6Ozwo9Dyebnrr9by7PDyhJuu7/L1fZapeLnrrtbzeJKmeZKm9fb4b4qgR2yJRmyJSG2JbIieZoOad7nrpNDyrdX0+vv8Xn2VeLnrrtXzXX2VeLnrrtXz/P39eLnrrtXz/P39eLnrrtXzWHiReLnrrtXzRWmFeLnrrtXzU3SOebnrrtXzUnON/v7+T3GLeLnrrtXzTG6J////eLnrrtXz////SGuGRmqF////////////RGiEeLnrrtXz////YeuWtAAAAJt0Uk5TAAEBAwMHBwgIDw8SEhQUHR0eHiYmKipERElJVVVWVldXWVlhYWFhZGRkZGZmaGhobGxtbW5ub29wcHx8gICAiIiLi5CQnJydnaSkqamwsLm5vLy8v8DAwMDAwMTFxcXFyMnLy8vMztDR0dLS1NfY2dnZ3d7e3t7j4+Pk5OTk5eXl5ubo6Ojq6urt7e3u7vLy8vX2+Pj5+vz8/f5agSrgAAACjElEQVR42u3Y51MTURQF8GdBsPfeKzbsHey9i6I0QVSKUlRQAVECigooJAGlBHbf32qIKe++fSvZmX33zcg93+6XnN+cmcxuwpj35I27JI/hhAAEIAABCGAccPJRKvkPhZxAApyxU3lnCTk9VQDn3ABncfqzvrgBPmeiAI7bbgDrGPoAEgBlAjCABMCYAA4gAxAmOGr/C2AdQR7AAdA+gTSAA6B7gqyOyQCBTNQBnAC9EzgGUAC0TnDYnhxgHcIcQAXQOIFzABVA3wSzOtIDBDLwBlACdE2gGkAN0DTBQTtdgHVAywCf0gd8zMAawAWgYwL1AG4ADRNssb0ArM2+A/Z7A+wjAAEIQAACEIAABPj/ANveKPPqtTpbfQfkjHtKDgEIQIApA+jtNQsYqa4eMQoo4rzIJKCcR1NuDtAwOAEYbDAF6GvnsbT3GQIU83iKzQBahhKAoRYjgFKeTKkJQGMkBYg0GgBUciGV+IAmDtKEDiiAgAJ0QD0E1GMDhiMQEBlGBrRxKW3IgDoZUIcMqJEBNciA4BjsHwtifwuaIaAZ/WtYAgEl6IBgp9jfGcR/FlSJgCoTj+Oy/kR9f5mZN6KuitGJ+tGKLmNvxQO1hYW1A/TbkAAEIAAOYOd3T8n2HUD/lhOAAAQgAAEIQAACEGCT1PweAt5KgI2+A5bB/p8XIOD8DwhY6jtgehgAHqyDgLX3QX9omu8AdgUAds/rEQHdc3cBwGX/+9mcD0L/PcY2iID1jN0V+ltnawCwVb+T/d8WRe8bKcD16Lnwa7L/10qmJSuex/tvLYjde8N/AaE9sXP+zXj/s+VMU2buuPYy/OTSmsS9JPfO08DtU4sT9+qLj0Mvrm6f4eUz/wCGT3FfBLvouwAAAABJRU5ErkJggg==" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Time to Water Up!</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+			//set your motivating message
+			var somotivating = "Water. So good for you!";
+			$('.msg').html(somotivating);
+			
+            //close windows after x amount of milliseconds!
+            setTimeout('window.close()', 10800000);
+            
             // Change the background based on hour of the day 
             var d = new Date();
             var n = d.getHours();
@@ -19,6 +25,10 @@
                 document.getElementById("bg").className = "morning";
         });
     </script>
+	
+	<!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAARSAAAEUgHQ6AxBAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAd1QTFRF////AP//////Var/qv//bbbbttv/gL/fn9//d7vuqt3ucbjxqtXxc7/ms9nye7ntsNP2d7vuqtX3ebzrrtfyebbtsNXzeLjsrdb0d7nqr9X1eLrqrtXzd7jqr9XzeLnqrdbzeLrrr9T0SnKRUXaRebjqrtXyRmyKSm6MeLrrrdbyeLnrr9XzRWeEeLjrrtXzeLjsr9Xzd7nqrdXzebnqrtXzd7rqr9b0Woqwcpazd7nqr9bzRGiDeLnrrdXzeLrqrtb0d7nrrtXyeLjsrtXzd7nrrdX0eLnsrtX0eLnrrtXzebrrrtXzeLnrrtXzeLnqrtbzY4mmd7jrrtXzucfRVYOmZ4ypr77Kzdfez9ng0drh3+XqeLnsmKu6mq28rdbz6Ozwo9Dyebnrr9by7PDyhJuu7/L1fZapeLnrrtbzeJKmeZKm9fb4b4qgR2yJRmyJSG2JbIieZoOad7nrpNDyrdX0+vv8Xn2VeLnrrtXzXX2VeLnrrtXz/P39eLnrrtXz/P39eLnrrtXzWHiReLnrrtXzRWmFeLnrrtXzU3SOebnrrtXzUnON/v7+T3GLeLnrrtXzTG6J////eLnrrtXz////SGuGRmqF////////////RGiEeLnrrtXz////YeuWtAAAAJt0Uk5TAAEBAwMHBwgIDw8SEhQUHR0eHiYmKipERElJVVVWVldXWVlhYWFhZGRkZGZmaGhobGxtbW5ub29wcHx8gICAiIiLi5CQnJydnaSkqamwsLm5vLy8v8DAwMDAwMTFxcXFyMnLy8vMztDR0dLS1NfY2dnZ3d7e3t7j4+Pk5OTk5eXl5ubo6Ojq6urt7e3u7vLy8vX2+Pj5+vz8/f5agSrgAAACjElEQVR42u3Y51MTURQF8GdBsPfeKzbsHey9i6I0QVSKUlRQAVECigooJAGlBHbf32qIKe++fSvZmX33zcg93+6XnN+cmcxuwpj35I27JI/hhAAEIAABCGAccPJRKvkPhZxAApyxU3lnCTk9VQDn3ABncfqzvrgBPmeiAI7bbgDrGPoAEgBlAjCABMCYAA4gAxAmOGr/C2AdQR7AAdA+gTSAA6B7gqyOyQCBTNQBnAC9EzgGUAC0TnDYnhxgHcIcQAXQOIFzABVA3wSzOtIDBDLwBlACdE2gGkAN0DTBQTtdgHVAywCf0gd8zMAawAWgYwL1AG4ADRNssb0ArM2+A/Z7A+wjAAEIQAACEIAABPj/ANveKPPqtTpbfQfkjHtKDgEIQIApA+jtNQsYqa4eMQoo4rzIJKCcR1NuDtAwOAEYbDAF6GvnsbT3GQIU83iKzQBahhKAoRYjgFKeTKkJQGMkBYg0GgBUciGV+IAmDtKEDiiAgAJ0QD0E1GMDhiMQEBlGBrRxKW3IgDoZUIcMqJEBNciA4BjsHwtifwuaIaAZ/WtYAgEl6IBgp9jfGcR/FlSJgCoTj+Oy/kR9f5mZN6KuitGJ+tGKLmNvxQO1hYW1A/TbkAAEIAAOYOd3T8n2HUD/lhOAAAQgAAEIQAACEGCT1PweAt5KgI2+A5bB/p8XIOD8DwhY6jtgehgAHqyDgLX3QX9omu8AdgUAds/rEQHdc3cBwGX/+9mcD0L/PcY2iID1jN0V+ltnawCwVb+T/d8WRe8bKcD16Lnwa7L/10qmJSuex/tvLYjde8N/AaE9sXP+zXj/s+VMU2buuPYy/OTSmsS9JPfO08DtU4sT9+qLj0Mvrm6f4eUz/wCGT3FfBLvouwAAAABJRU5ErkJggg==" />
+
     <style type="text/css">
         .animated {
             -webkit-animation-duration: 1s;
@@ -83,7 +93,7 @@
         }
         
         body {
-            font: normal 67pt Raleway, Times, sans-serif;
+            font: normal 67pt Arial, sans-serif;
             color: #dedede;
             overflow: hidden;
             margin: 0;
@@ -105,7 +115,6 @@
             background: linear-gradient(to bottom, #4a4969 0%, #7072ab 50%, #cd82a0 100%) !important;
         }
         
-        @import "compass/css3";
         canvas {
             position: absolute;
             bottom: 0;
@@ -124,9 +133,8 @@
 
 <body>
     <div id="bg"></div>
-    <div class="msg animated infinite pulse">It's time to water up, punk.</div>
+    <div class="msg animated infinite pulse"></div>
     <script type="text/javascript">
-        setTimeout('window.close()', 10800000); //close windows after x amount of time!
         var _requestAnimationFrame = window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame || function (callback) {
             window.setTimeout(callback, 1000 / 60)
         };
